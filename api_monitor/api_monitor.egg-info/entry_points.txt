@@ -1,0 +1,2 @@
+[console_scripts]
+api_monitor = api_monitor.__main__:main

@@ -1,5 +1,5 @@
       
-#!/usr/bin/env python3
+#!./work/venv/bin python3
 # -*- coding: utf-8 -*-
 
 import requests
@@ -62,9 +62,9 @@ MONITOR_CONFIG = {
     'apis': [
         # 只需要提供name和url，其他配置使用默认值
         create_api_config('线上API', 'https://api.fitnexa.com/ys/device/user/info'),
-        create_api_config('测试API', 'https://apitest.fitnexa.com/ys/device/user/info'),
+        create_api_config('测试API', 'https://aitest.fitnexa.com/ys/device/user/info'),
         create_api_config('线上API-IP', 'http://40.90.222.230/ys/device/user/info'),
-        create_api_config('线上API-IP', 'https://httpbin.org/status/500'),
+        create_api_config('httpbin', 'https://httpbin.org/status/500'),
         create_api_config('测试API-IP', 'http://20.157.110.98/ys/device/user/info')
     ],
     'check_interval': 30,  # 检查间隔（秒）
@@ -75,7 +75,7 @@ MONITOR_CONFIG = {
 
 # 飞书配置
 FEISHU_CONFIG = {
-   'webhook': 'https://open.feishu.cn/open-apis/bot/v2/hook/1703bcca-9f9b-4829-a7cd-f0c65842af7e',
+   'webhook': 'https://open.feishu.cn/open-apis/bot/v2/hook/8b4a5064-422b-44a2-935b-2575e7db9a5b',
    'user_ids': ["c2df4aaa"]
 }
 
