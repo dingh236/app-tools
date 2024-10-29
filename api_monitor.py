@@ -64,6 +64,7 @@ MONITOR_CONFIG = {
         create_api_config('线上API', 'https://api.fitnexa.com/ys/device/user/info'),
         create_api_config('测试API', 'https://apitest.fitnexa.com/ys/device/user/info'),
         create_api_config('线上API-IP', 'http://40.90.222.230/ys/device/user/info'),
+        create_api_config('线上API-IP', 'https://httpbin.org/status/500'),
         create_api_config('测试API-IP', 'http://20.157.110.98/ys/device/user/info')
     ],
     'check_interval': 30,  # 检查间隔（秒）
