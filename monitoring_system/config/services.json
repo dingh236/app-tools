@@ -1,0 +1,53 @@
+{
+    "services": [
+        {
+            "name": "API Monitor",
+            "process_name": "api_monitor",
+            "port": 8000,
+            "health_check_url": "http://localhost:8000/health",
+            "timeout": 5,
+            "alert_thresholds": {
+                "response_time": 1.0,
+                "error_rate": 5.0
+            }
+        },
+        {
+            "name": "Dashboard",
+            "process_name": "uvicorn",
+            "port": 8080,
+            "health_check_url": "http://localhost:8080/health",
+            "timeout": 5,
+            "alert_thresholds": {
+                "response_time": 1.0,
+                "error_rate": 5.0
+            }
+        }
+    ],
+    "monitor": {
+        "check_interval": 30,
+        "system_metrics_interval": 60,
+        "history_retention_days": 7
+    },
+    "thresholds": {
+        "cpu_percent": 80,
+        "memory_percent": 85,
+        "disk_usage": 90,
+        "response_time": 5
+    },
+    "dashboard": {
+        "host": "0.0.0.0",
+        "port": 8080,
+        "debug": false,
+        "refresh_interval": 5
+    },
+    "alerts": {
+        "enabled": true,
+        "cooldown_minutes": 5,
+        "channels": {
+            "feishu": {
+                "webhook_url": "https://open.feishu.cn/open-apis/bot/v2/hook/8b4a5064-422b-44a2-935b-2575e7db9a5b",
+                "user_ids": ["c2df4aaa"]
+            }
+        }
+    }
+}

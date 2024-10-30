@@ -1,0 +1,21 @@
+2024-10-30 04:08:37,697 - monitoring - INFO - Dashboard started on http://localhost:8080
+2024-10-30 04:08:37,700 - monitoring - INFO - API server started on http://localhost:8000
+2024-10-30 04:08:38,110 - services.monitor - INFO - Successfully loaded config from /root/app-tools/monitoring_system/config/services.json
+2024-10-30 04:08:38,111 - services.monitor - INFO - Starting service monitoring...
+2024-10-30 04:08:39,239 - services.monitor - ERROR - Error checking health endpoint http://localhost:8000/health: Cannot connect to host localhost:8000 ssl:default [Connect call failed ('127.0.0.1', 8000)]
+2024-10-30 04:08:39,306 - services.monitor - ERROR - Error checking health endpoint http://localhost:8080/health: Cannot connect to host localhost:8080 ssl:default [Connect call failed ('127.0.0.1', 8080)]
+2024-10-30 04:08:50,823 - monitoring - INFO - System stopped by user
+2024-10-30 04:09:08,793 - monitoring - INFO - Dashboard started on http://localhost:8080
+2024-10-30 04:09:08,798 - monitoring - INFO - API server started on http://localhost:8000
+2024-10-30 04:09:09,141 - services.monitor - INFO - Successfully loaded config from /root/app-tools/monitoring_system/config/services.json
+2024-10-30 04:09:09,142 - services.monitor - INFO - Starting service monitoring...
+2024-10-30 04:09:10,236 - services.monitor - ERROR - Error checking health endpoint http://localhost:8000/health: Cannot connect to host localhost:8000 ssl:default [Connect call failed ('127.0.0.1', 8000)]
+2024-10-30 04:09:10,315 - services.monitor - ERROR - Error checking health endpoint http://localhost:8080/health: Cannot connect to host localhost:8080 ssl:default [Connect call failed ('127.0.0.1', 8080)]
+2024-10-30 04:09:37,221 - monitoring - INFO - System stopped by user
+2024-10-30 04:10:01,007 - monitoring - INFO - Dashboard started on http://localhost:8080
+2024-10-30 04:10:01,012 - monitoring - INFO - API server started on http://localhost:8000
+2024-10-30 04:10:01,413 - services.monitor - INFO - Successfully loaded config from /root/app-tools/monitoring_system/config/services.json
+2024-10-30 04:10:01,414 - services.monitor - INFO - Starting service monitoring...
+2024-10-30 04:10:02,509 - services.monitor - ERROR - Error checking health endpoint http://localhost:8000/health: Cannot connect to host localhost:8000 ssl:default [Connect call failed ('127.0.0.1', 8000)]
+2024-10-30 04:10:02,581 - services.monitor - ERROR - Error checking health endpoint http://localhost:8080/health: Cannot connect to host localhost:8080 ssl:default [Connect call failed ('127.0.0.1', 8080)]
+2024-10-30 04:10:07,401 - monitoring - INFO - System stopped by user

@@ -1,0 +1,44 @@
+{
+    "rules": [
+        {
+            "name": "high_cpu_usage",
+            "type": "system",
+            "metric": "cpu_percent",
+            "operator": ">",
+            "threshold": 90,
+            "duration": 300,
+            "severity": "critical",
+            "description": "CPU使用率超过90%持续5分钟"
+        },
+        {
+            "name": "high_memory_usage",
+            "type": "system",
+            "metric": "memory_percent",
+            "operator": ">",
+            "threshold": 85,
+            "duration": 300,
+            "severity": "warning",
+            "description": "内存使用率超过85%持续5分钟"
+        },
+        {
+            "name": "service_high_latency",
+            "type": "service",
+            "metric": "response_time",
+            "operator": ">",
+            "threshold": 1.0,
+            "duration": 180,
+            "severity": "warning",
+            "description": "服务响应时间超过1秒持续3分钟"
+        },
+        {
+            "name": "high_error_rate",
+            "type": "service",
+            "metric": "error_rate",
+            "operator": ">",
+            "threshold": 5.0,
+            "duration": 300,
+            "severity": "critical",
+            "description": "服务错误率超过5%持续5分钟"
+        }
+    ]
+}

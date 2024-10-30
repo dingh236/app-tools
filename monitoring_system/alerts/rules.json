@@ -1,0 +1,22 @@
+{
+    "rules": [
+        {
+            "name": "high_cpu_usage",
+            "metric": "cpu_percent",
+            "operator": ">",
+            "threshold": 90,
+            "duration": 300,
+            "severity": "critical",
+            "description": "CPU使用率超过90%持续5分钟"
+        },
+        {
+            "name": "service_down",
+            "metric": "service_status",
+            "operator": "==",
+            "threshold": 0,
+            "duration": 60,
+            "severity": "critical",
+            "description": "服务停止运行超过1分钟"
+        }
+    ]
+}
