@@ -15,12 +15,8 @@ class APIMonitorSettings:
 
     # API配置列表
     APIS = [
-        create_api_config('线上API', 'https://api.fitnexa.com/ys/device/user/info'),
-        create_api_config('测试API', 'https://aitest.fitnexa.com/ys/device/user/info'),
-        create_api_config('线上API-IP', 'http://40.90.222.230/ys/device/user/info'),
-        create_api_config('httpbin', 'https://httpbin.org/status/500'),
-        create_api_config('CDN-API', 'https://fitnexa01-dcgyf3g8gygcg6eg.z01.azurefd.net/ys/device/user/info'),
-        create_api_config('测试API-IP', 'http://20.157.110.98/ys/device/user/info')
+    create_api_config('httpbin', 'https://httpbin.org/status/500'),
+    create_api_config('$API_name', '$API_URL')
     ]
 
     # 监控配置
@@ -33,8 +29,8 @@ class APIMonitorSettings:
 
     # 飞书配置
     FEISHU_CONFIG = {
-        'webhook': 'https://open.feishu.cn/open-apis/bot/v2/hook/8b4a5064-422b-44a2-935b-2575e7db9a5b',
-        'user_ids': ["c2df4aaa"]
+        'webhook': '飞书机器人Webhook地址',
+        'user_ids': ["用户ID1"]
     }
 
     # 日志配置
